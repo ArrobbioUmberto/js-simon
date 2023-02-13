@@ -16,17 +16,21 @@ while (Number.length < 5){
 }
 
 
-// alert(Number)
-// let numberUser = ''
-// setTimeout (myfunction,3000)
-// function myfunction(){
-//     for (let i = 0; i < 5;i++){
-//         let userTry = parseInt(prompt('Dimmi uno dei numeri che hai appena visto, vediamo se li ricordi tutti'))
-//         console.log(numberUser,Number)
-//     }
-//     if (Number.includes(numberUser)){
-//         console.log('complimenti hai indovinato tutti i numeri')
-//     }
-// }
-
-// const askNumber = parseInt(prompt('Ti ricordi i numeri che hai appena visto ?'))
+alert(Number)
+let numberUser = []
+let numberPush 
+// console.log(numberUser)
+setTimeout (myfunction,3000)
+function myfunction(numberUser){
+    numberUser = []
+    let numberPush = numberUser
+    for (let i = 0; i < 5;i++){
+        let userTry = parseInt(prompt('Dimmi uno dei numeri che hai appena visto, vediamo se li ricordi tutti'))
+        numberPush.push(userTry)
+        console.log(numberPush)
+    }
+    console.log(numberPush, Number)
+    if (numberPush = Number){
+        console.log("Complimenti hai azzeccato tutti i numeri")
+    }
+}
