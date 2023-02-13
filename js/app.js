@@ -20,7 +20,7 @@ while (Number.length < 5){
 alert(Number)
 
 // console.log(numberUser)
-setTimeout (myfunction,3000)
+setTimeout (myfunction,30000)
 function myfunction() {
     let numberUser = [];
     let numberPush = numberUser;
