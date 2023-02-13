@@ -8,7 +8,7 @@ console.log(containerEL)
 let Number = []
 // generare 5 numeri casuali e metterli dentro una costante 
 while (Number.length < 5){
-        let randomNumber = Math.round(Math.random() * 9) + 1
+        let randomNumber = Math.round(Math.random() * 99) + 1
         if (!Number.includes(randomNumber)){
             Number.push(randomNumber)
         }
@@ -42,17 +42,17 @@ function myfunction() {
 
 function confrontoArray(numberPush, Number) {
     if (numberPush.length !== Number.length) {      // prima condizione per capire subito se non hanno la stessa lunghezza senno non parte neanche il ciclo for 
-        containerEL.innerHTML = `<h1> Mi spiace non hai azzeccato tutti i numeri. Guarda quale hai mancato, ${Number}</h1>`
+        containerEL.innerHTML = `<h1 style= " color:orange; font-style:italic; font-size:2rem "> Mi spiace non hai azzeccato tutti i numeri. Guarda quale hai mancato, ${Number}</h1>`
         return false
     }
     numberPush.sort()
     Number.sort()
     for (let i = 0; i < numberPush.length; i++) {
         if (numberPush[i] !== Number[i]) {
-            containerEL.innerHTML = `<h1> Mi spiace non hai azzeccato tutti i numeri. Guarda quale hai mancato, ${Number}</h1>`
+            containerEL.innerHTML = `<h1 style= " color:orange; font-style:italic; font-size:2rem "> Mi spiace non hai azzeccato tutti i numeri. Guarda quale hai mancato, ${Number}</h1>`
             return false
         }
     }
-    containerEL.innerHTML = `<h1> Complimenti hai azzeccato tutti i numeri. ${Number}</h1>`
+    containerEL.innerHTML = `<h1 style= " color:orange; font-style:italic; font-size:2rem "> Complimenti hai azzeccato tutti i numeri. ${Number}</h1>`
     return true
 }
